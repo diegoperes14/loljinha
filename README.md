@@ -3,3 +3,5 @@
 [Em breve o Link dela estará aqui](https://loljinha.com.br)
 
 Desenvolvido por Diego Lima
+
+Now on Linux.
