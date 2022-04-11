@@ -1,0 +1,1 @@
+Bem vindo à home da Loljinha!
