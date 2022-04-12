@@ -17,8 +17,11 @@ use App\Http\Controllers\{
 |
 */
 
-Route::get('/users', [UserController::class, 'index'])->name('user.index');
-Route::get('/users/{id}', [UserController::class, 'show'])->name('user.show');
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
+Route::get('users/create', [userController::class, 'create'])->name('users.create');
+Route::post('users', [UserController::class, 'store'])->name('users.store');
+Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');
+
 Route::get('/home', [HomeController::class, 'home'])->name('home.show');
 
 Route::get('/', function () {
