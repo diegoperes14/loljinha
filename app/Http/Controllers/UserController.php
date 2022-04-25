@@ -20,7 +20,9 @@ class UserController extends Controller
         if (!$user = User::find($id)){
             return redirect()->route('users.index');
         }
-        return view ('users/show', compact('user'));
+        $profile_imagem = ProfileImageController::showByIdUser(1);
+
+        return view ('users/show', compact('user', 'profile_imagem'));
     }
 
     //exibe a página atual
@@ -35,10 +37,10 @@ class UserController extends Controller
 
     //cadastra o novo usuário
     public function store(Request $request){
-        dd($request->only([
+        $p = $request->only([
             'name',
             'email',
             'password'
-        ]));
+        ]);
     }
 }

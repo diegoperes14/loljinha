@@ -9,5 +9,6 @@
         <li>Nome: {{$user->name}}</li>
         <li>Email: {{$user->email}}</li>
         <li>Cadastro: {{$user->created_at}}</li>
+        <li>ID da imagem: {{$profile_imagem->id}} </li>
     </ul>
 @endsection

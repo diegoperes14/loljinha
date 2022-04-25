@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
     UserController,
-    HomeController
+    HomeController,
+    ProfileImageController
 };
 
 /*
@@ -23,6 +24,10 @@ Route::post('users', [UserController::class, 'store'])->name('users.store');
 Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');
 
 Route::get('/home', [HomeController::class, 'home'])->name('home.show');
+
+//rotas de profile_image
+Route::get('upload-image', [ProfileImageController::class, 'index']);
+Route::post('save', [ProfileImageController::class, 'save']);
 
 Route::get('/', function () {
     return view('welcome');
