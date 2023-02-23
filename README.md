@@ -6,3 +6,5 @@
 Desenvolvido por Diego Lima
 
 Now on Linux.
+
+Shop for shopers
